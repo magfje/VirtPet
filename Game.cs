@@ -227,8 +227,6 @@ Would you like to search for loot?";
         {
             var index = PetList();
             var toFeed = PetsList[index];
-            toFeed.ShowStats();
-
             var prompt = toFeed.ShowStats();
             string[] options = { "Yes", "No" };
             var selectedIndex = new Menu(prompt, options).Run();
